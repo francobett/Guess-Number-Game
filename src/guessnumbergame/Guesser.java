@@ -56,7 +56,11 @@ public class Guesser {
                 default: System.out.println("Something went wrong, retry"); break;
             }
             previousGuessingNumber = auxNumber; // Guardar n° anterior
-            
+           
+            if(guessingNumber < min || guessingNumber > max){
+                System.out.println("Remember you have to think a number between " + min + " and " + max );
+                return;
+            }
                 
             
         }
